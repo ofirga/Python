@@ -59,13 +59,33 @@ while num != 0:
     num = int(input("Please enter a number: "))
 '''
 
-list = [1,5,-6,2,55,0,'boom',44]
+'''list = [1,5,-6,2,55,0,'boom',44]
 for l in list:
     if l == 'boom':
         break
+    if l <= 0 :
+        continue
     if l > 0 :
         for n in range(l, 0, -1):
             print(n)
-    if l <= 0 :
-        continue
+'''
+
+x = float(input("Enter number 1: "))
+y = float(input("Enter number 1: "))
+
+while 'True':
+    op = input("Enter + - * / Q ")
+    if op == '+':
+        print(f'x-y=: {x+y}')
+    if op == '-':
+        print(f'x+y=: {x-y}')
+    if op == 'Q':
+        break
+    if op == '*':
+        print(f'x*y=: {x*y}')
+    if op == '/':
+        if y == 0:
+            break
+        else:
+            print(f'x/y=: {x/y}')
 
